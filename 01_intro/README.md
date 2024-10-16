@@ -20,6 +20,7 @@ Here you will find the necessary information for this week’s lecture and exerc
 - Module schedule
 - Technical issues (R, QGIS, Cloud, Laptops)
 - Prior experience with inventories
+- slides (geosense): https://docs.google.com/presentation/d/1lvVRWyAEHfGcBFbZTfeU6X-s7GC1XsrBowkzgaUY0hs/edit?usp=sharing
 
 ### Block: Afternoon (Self-study):
 
