@@ -1,4 +1,4 @@
-# B.Sc. Inventories and Applied Geomatics
+# M.Sc. Inventories and Applied Geomatics
 ## General Course Information
 
 https://campus.uni-freiburg.de:443/qisserver/pages/startFlow.xhtml?_flowId=detailView-flow&unitId=126509&periodId=2483&navigationPosition=examEventOverviewOwn
