@@ -43,6 +43,6 @@ So the filesystem will be as follows:
 
 ### Block: Afternoon (Self-study):
 
-- Install QGIS and R, RStudio https://docs.google.com/document/d/1xhVcdMaZ67cjOrmPuiTCrIcaNcrgsD-rq6ALj-AlmNQ/edit?usp=sharing
+- Install QGIS and R, RStudio (see pdf document in exercises folder)
 
 - First Quarto exercise (introduction_to_quarto.qmd)
