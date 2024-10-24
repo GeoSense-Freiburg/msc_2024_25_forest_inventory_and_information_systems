@@ -27,20 +27,23 @@ So the filesystem will be as follows:
 ---------------------------
 
 # News
-## 17.10.2024
 
-### Morning Block (Max, Teja, Thomas P., Thomas S.):
+## October 24, 2024: Lecture Block (Thomas P.):
+- Theory and Introduction to Forestry Inventories
+- Introduction to the theory of inventories
+- Why inventories?
+- Terrestrial inventories
+- Inventory design
+- Inventory methods
 
-- Introduction to the module
-- Presentation of the module and participants
-- Introduction of the professors and their research
-- Introduction of the instructors
-- Module schedule
-- Technical issues (R, QGIS, Cloud, Laptops)
-- Prior experience with inventories
+## Exercise (Thomas P., Max F.):
 
-### Block: Afternoon (Self-study):
-
-- Install QGIS and R, RStudio (see pdf document in exercises folder)
-
-- First Quarto exercise (introduction_to_quarto.qmd)
+- Application of inventory planning
+- Planning an inventory in GIS
+- Starting situation for inventory for forestry operations or private forests with a specified area
+- Which inventory method (angle count sampling, etc.)?
+- Determination of the inventory scope (number of samples/plots)
+- Positioning of inventory points
+- Regular grid
+- Random samples
+- Stratification? (e.g., by stands/forest types/topography)
