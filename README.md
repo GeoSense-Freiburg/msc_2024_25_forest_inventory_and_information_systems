@@ -5,9 +5,7 @@ https://campus.uni-freiburg.de:443/qisserver/pages/startFlow.xhtml?_flowId=detai
 
 Start 17.10.24
 
-Do 13-17 Uhr 17.11.24 (HS 112 Universitätsrechenzentrum)
-
-Do 13-17 Uhr ab 24.11.24 (R 400)
+Do 13-17 Uhr in Herderbau (R 400, 4th floor)
 
 Bring a laptop. If not available, work in a team.
 Install QGIS (version 3.34 LTR!) and RStudio.
