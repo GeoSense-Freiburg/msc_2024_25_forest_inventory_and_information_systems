@@ -63,7 +63,7 @@ The path will now be saved as a completed element.
 
 - Open the list of saved tracks (under ‘My Maps’ > Track icon).
 - Select the tracked path and tap the three dots (⋮) next to the track name.
-- Choose ‘Export’ and export the path as KML (KML is sufficient for importing into QGIS).
+- Choose ‘Export’ and export the path as GPX (GPX is sufficient for importing into QGIS).
 
 **Exporting the Points:**
 
