@@ -1,22 +1,31 @@
-# 31.10.2024
+# 30.10.2024
 
-## Lecture Block (Thomas P.): Positioning
+## Morning Session (Thomas P.): Positioning
 
-- Introduction to Satellite-Based Positioning
-- Why is Positioning Important for Inventories?
+- Introduction to Satellite-based Positioning
+- Why is positioning important for inventories?
 - GPS, GLONASS, BEIDOU, GALILEO +
-- GNSS Uncertainties and Influencing Factors
-- Hemisphere: North, South; From which direction to measure trees?
-- Distance/Shading from Trees
-- RTK, SAPOS, Rover, Base Station, Postprocessing
+- GNSS uncertainties and influencing factors
+- Hemisphere: North, South; On which side of the sky to measure trees?
+- Distance/shading from trees
+- RTK, SAPOS, Rover, Base station, Postprocessing
 
-## Exercise Block (Max, Teja, Thomas P., Uwe U.): Field Exercise on GNSS
+## Afternoon Session (Max): Field Exercise on GNSS
 
-**Groups of 2 People**
+### General Schedule:
 
-- Introduction to EmlidReach, Base, Rover (before the exercise)
-- **Station Run around Schlossberg with Smartphone GNSS**: One person tracks the path, while the other measures various points (e.g., trees or corners of buildings).
+- Start at 15:00
+- Approximately 15-20 minutes introduction to Emlid Reach Base and Rover
+- Independently complete the circuit (approx. 1.5h) and track points and path using Avenza Maps.
+- Upload CSV and GPX online immediately after the exercise and review results
+- Send CSV and GPX to Max via email (as a backup in case the online app does not work)
+
+### Groups of 2 People:
+
+- Introduction to Emlid Reach, Base, Rover (before the exercise)
+- __Circuit around Schloßberg with Smartphone GNSS__: One person tracks the path, one person records various points (e.g., trees or building corners)
   - Understand the influence of the canopy
-  - Understand the accuracy of GNSS
-  - Measurements will be compared in the follow-up session (variance)
-- Station run as a **GeoPackage (1x line layer of the tracked path, 1x point layer of the measured points, all in WGS84 (EPSG: 4326))** to be emailed to maximilian.fabi@geosense.uni-freiburg.de by **no later than Monday 09:00 AM, 04.11.24**.
+  - Understand GNSS accuracy
+  - Measurements will be compared in the next session (variance)
+- Send the circuit as a **ZIP file (GPX and CSV)** via email to maximilian.fabi@geosense.uni-freiburg.de by **Monday 09:00 AM 04.11.24 at the latest**
+- Simultaneously upload to shinyapp and follow results in real-time
