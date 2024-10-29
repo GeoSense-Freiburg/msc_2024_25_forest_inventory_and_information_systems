@@ -1,4 +1,4 @@
-# 30.10.2024
+# 31.10.2024
 
 ## Morning Session (Thomas P.): Positioning
 
