@@ -1,6 +1,6 @@
 # 31.10.2024
 
-## Morning Session (Thomas P.): Positioning
+## Lecture Session (Thomas P.): Positioning
 
 - Introduction to Satellite-based Positioning
 - Why is positioning important for inventories?
@@ -10,7 +10,7 @@
 - Distance/shading from trees
 - RTK, SAPOS, Rover, Base station, Postprocessing
 
-## Afternoon Session (Max): Field Exercise on GNSS
+## Exercise Session (Max): Field Exercise on GNSS
 
 ### General Schedule:
 

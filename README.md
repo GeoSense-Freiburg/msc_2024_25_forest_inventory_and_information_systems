@@ -32,7 +32,7 @@ So the filesystem will be as follows:
 
 folder: 03_gnss
 
-## Morning Block (Thomas P.):
+## Lecture Block (Thomas P.):
 
 - Position determination
 - Introduction to satellite-based positioning
@@ -44,7 +44,7 @@ folder: 03_gnss
 - Minimizing GNSS uncertainties
 - RTK, SAPOS, Rover, Base station, Postprocessing
 
-## Afternoon Block (Max): Field Exercise!
+## Exercise Block (Max): Field Exercise!
 
 - **Field exercise** on GNSS
 - Groups of 2 people
