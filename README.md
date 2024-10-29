@@ -28,6 +28,47 @@ So the filesystem will be as follows:
 
 # News
 
+## 31.10.2024
+
+folder: 03_gnss
+
+## Morning Block (Thomas P.):
+
+- Position determination
+- Introduction to satellite-based positioning
+- Why is positioning important for inventories?
+- GPS, GLONASS, BEIDOU, GALILEO +
+- GNSS uncertainties and influencing factors
+- Hemisphere, North, South, On which side of the sky to measure trees?
+- Distance/shading from trees
+- Minimizing GNSS uncertainties
+- RTK, SAPOS, Rover, Base station, Postprocessing
+
+## Afternoon Block (Max): Field Exercise!
+
+- **Field exercise** on GNSS
+- Groups of 2 people
+    - One person tracks, one measures points (circuit around Schlossberg)
+- Introduction to EmlidReach, Base, Rover (before the exercise)
+
+What you need:
+
+- **Weatherproof clothing**
+- Smartphone
+- Avenza Maps App (please download!)
+- Materials in folder 03_gnss/exercises
+
+**Meeting point behind Kanonenplatz (https://maps.app.goo.gl/1t6J6wnk2cSg4bkt7) punctually at 15:00 (please try to be there slightly earlier so we can start directly).**
+
+Rough schedule:
+
+- Start at 15:00
+- Approx. 15-20 minutes introduction to Emlid Reach Base and Rover
+- Independently complete the circuit (approx. 1.5h) and track the points and path using Avenza Maps.
+- After the exercise, immediately upload the CSV and GPX online and review the results
+- Send CSV and GPX to Max by email (as a backup in case the online app does not work)
+
+
 ## October 24, 2024: Lecture Block (Thomas P.):
 - Theory and Introduction to Forestry Inventories
 - Introduction to the theory of inventories
