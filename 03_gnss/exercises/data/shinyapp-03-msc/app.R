@@ -36,26 +36,31 @@ folder_path <- "field-data"  # Change this to your folder path
 data <- read_all_csv(folder_path)
 gpx_data <- read_all_gpx(folder_path)
 
+# Filter out points more than 15m away from their respective centroid
+centroid_data <- data %>%
+  group_by(Title) %>%
+  summarise(centroid_lat = mean(Latitude), centroid_lon = mean(Longitude))
+data_with_centroids <- data %>%
+  left_join(centroid_data, by = "Title") %>%
+  rowwise() %>%
+  mutate(distance_to_centroid = distGeo(c(Longitude, Latitude), c(centroid_lon, centroid_lat)))
+filtered_data <- data_with_centroids %>%
+  filter(distance_to_centroid <= 15)
+
 # Define UI
 ui <- fluidPage(
   titlePanel("Aftermath to Exercise 03_gnss"),
   
-  sidebarLayout(
-    sidebarPanel(
-      textOutput("upload_status")
-    ),
-    
-    mainPanel(
-      tabsetPanel(
-        tabPanel("Instructions", 
-                 includeMarkdown("instructions.md")),
-        #tabPanel("Table View", dataTableOutput("data_table")),
-        tabPanel("GPS Precision Plot", plotOutput("data_plot")),
-        tabPanel("Sky Cover Map", leafletOutput("data_map")),
-        tabPanel("Name Map", leafletOutput("name_map")),
-        tabPanel("Sky Cover vs Distance Plot", plotOutput("trendline_plot")),
-        tabPanel("GPX Tracks", leafletOutput("gpx_map"))
-      )
+  mainPanel(
+    tabsetPanel(
+      tabPanel("Instructions", 
+               includeMarkdown("instructions.md")),
+      #tabPanel("Table View", dataTableOutput("data_table")),
+      tabPanel("GPS Precision Plot", plotOutput("data_plot")),
+      tabPanel("Sky Cover Map", leafletOutput("data_map")),
+      tabPanel("Name Map", leafletOutput("name_map")),
+      tabPanel("Sky Cover vs Distance Plot", plotOutput("trendline_plot")),
+      tabPanel("GPX Tracks", leafletOutput("gpx_map"))
     )
   )
 )
@@ -65,12 +70,12 @@ server <- function(input, output, session) {
   
   # Display combined CSV data as a table
   output$data_table <- renderDataTable({
-    data
+    filtered_data
   })
   
   # GPS Precision Plot based on sky cover
   output$data_plot <- renderPlot({
-    ggplot(data, aes(x = Longitude, y = Latitude, color = as.numeric(Description) * 10)) +
+    ggplot(filtered_data, aes(x = Longitude, y = Latitude, color = as.numeric(Description) * 10)) +
       geom_point(size = 3) +
       scale_color_gradient(low = "blue", high = "red") +
       theme_minimal() +
@@ -79,13 +84,13 @@ server <- function(input, output, session) {
   
   # Sky Cover Map
   output$data_map <- renderLeaflet({
-    leaflet(data) %>%
+    leaflet(filtered_data) %>%
       addTiles(options = tileOptions(maxZoom = 22)) %>%
       addCircleMarkers(~Longitude, ~Latitude,
                        color = ~colorNumeric("YlOrRd", as.numeric(Description) * 10)(as.numeric(Description) * 10),
                        popup = ~paste("Title:", Title, "<br>", "Sky Cover:", as.numeric(Description) * 10, "%")) %>%
-      addLegend("bottomright", pal = colorNumeric("YlOrRd", as.numeric(data$Description) * 10),
-                values = as.numeric(data$Description) * 10,
+      addLegend("bottomright", pal = colorNumeric("YlOrRd", as.numeric(filtered_data$Description) * 10),
+                values = as.numeric(filtered_data$Description) * 10,
                 title = "Sky Cover (%)",
                 opacity = 1) %>%
       addScaleBar(position = "bottomleft", options = scaleBarOptions(maxWidth = 100, metric = TRUE, imperial = FALSE))
@@ -94,8 +99,8 @@ server <- function(input, output, session) {
   # Name Map with unique color for each Title
   output$name_map <- renderLeaflet({
     color_palette <- colorFactor(palette = brewer.pal(n = 8, "Set1"), 
-                                 domain = data$Title)
-    leaflet(data) %>%
+                                 domain = filtered_data$Title)
+    leaflet(filtered_data) %>%
       addTiles(options = tileOptions(maxZoom = 22)) %>%
       addCircleMarkers(
         ~Longitude, ~Latitude,
@@ -103,40 +108,33 @@ server <- function(input, output, session) {
         popup = ~paste("Title:", Title),
         radius = 6
       ) %>%
-      addLegend("bottomright", pal = color_palette, values = data$Title,
+      addLegend("bottomright", pal = color_palette, values = filtered_data$Title,
                 title = "Point Name", opacity = 1) %>%
       addScaleBar(position = "bottomleft", options = scaleBarOptions(maxWidth = 100, metric = TRUE, imperial = FALSE))
   })
   
   # Sky Cover vs Distance to Centroid Plot
   output$trendline_plot <- renderPlot({
-    centroid_data <- data %>%
-      group_by(Title) %>%
-      summarise(centroid_lat = mean(Latitude), centroid_lon = mean(Longitude))
-    data_with_centroids <- data %>%
-      left_join(centroid_data, by = "Title") %>%
-      rowwise() %>%
-      mutate(distance_to_centroid = distGeo(c(Longitude, Latitude), c(centroid_lon, centroid_lat)))
-    variance_data <- data_with_centroids %>%
+    variance_data <- filtered_data %>%
       group_by(Title) %>%
       summarise(
         avg_sky_cover = mean(as.numeric(Description) * 10, na.rm = TRUE),
         avg_distance = mean(distance_to_centroid, na.rm = TRUE)
       )
-    ggplot(variance_data, aes(x = avg_sky_cover, y = avg_distance)) +
+    ggplot(variance_data, aes(x = avg_sky_cover, y = avg_distance, label = Title)) +
       geom_point(color = "blue", size = 3) +
+      geom_text(vjust = -1, hjust = 1) +
       geom_smooth(method = "lm", se = FALSE, color = "red") +
       annotate("text", 
                x = max(variance_data$avg_sky_cover), 
                y = max(variance_data$avg_distance),
-               label = paste("R² =", 
-                             round(summary(lm(avg_distance ~ avg_sky_cover, 
-                                              data = variance_data))$r.squared, 4)), 
+               label = paste("r =", 
+                             round(cor.test(variance_data$avg_distance, variance_data$avg_sky_cover, method="pearson")$estimate, 2)), 
                hjust = 2, 
                vjust = 2, 
                color = "black") +
       theme_minimal() +
-      labs(title = "Average Distance to Centroid vs Sky Cover", x = "Sky Cover (%)", y = "Average Distance (m)")
+      labs(title = "Average Distance to Centroid vs Sky Cover", x = "Average Sky Cover (%)", y = "Average Distance (m)")
   })
   
   # GPX Tracks Map
@@ -148,6 +146,8 @@ server <- function(input, output, session) {
       addScaleBar(position = "bottomleft", options = scaleBarOptions(maxWidth = 100, metric = TRUE, imperial = FALSE))
   })
 }
+
+
 
 # Run the application
 shinyApp(ui = ui, server = server)
