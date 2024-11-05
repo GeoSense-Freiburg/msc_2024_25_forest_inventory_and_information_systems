@@ -1,6 +1,6 @@
 ## 07.11.2024 (Field Day)
 
-### Field Day (Max, Teja, Jon): 10:00-14:00 +-
+### Field Day (Max, Teja, Jon): 13:00-17:00 +-
 
 - Debriefing field exercise on position determination
 - Discussion on GPS inaccuracy (approx. 15 minutes)

@@ -32,7 +32,7 @@ So the filesystem will be as follows:
 
 folder: 04_accuracy_inventory
 
-### Field Day (Max, Teja, Jon): 10:00-14:00 +-
+### Field Day (Max, Teja, Jon): 13:00-17:00 +-
 
 - Debriefing field exercise on position determination
 - Discussion on GPS inaccuracy (approx. 15 minutes)
