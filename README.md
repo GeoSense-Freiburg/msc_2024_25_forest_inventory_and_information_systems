@@ -50,6 +50,7 @@ folder: 04_accuracy_inventory
 ### Homework
 
 - Calculate and submit inventory metrics (e.g., stem density, DBH, basal area) (e.g., Google Sheet)
+**see readme file in folder 04**
 
 ----------------------------
 

@@ -17,4 +17,18 @@
 
 ### Homework
 
-- Calculate and submit inventory metrics (e.g., stem density, DBH, basal area) (e.g., Google Sheet)
+**Calculate and submit inventory metrics (e.g., stem density, DBH, basal area) (e.g., Google Sheet)**
+
+As announced, here is a link to download the Excel sheet (Google Sheet) and fill in the fields.
+
+https://docs.google.com/spreadsheets/d/12TIfmoryrPm5wyUbEsNCX70ULmcyb0QBVlM1kdcV2_I/edit?usp=sharing
+
+Please
+- download the document via File -> Download -> (as Excel or Open Document file, for example)
+- name it after your starting number today (if you started at plot 1, name the file "group_1")
+- enter your 2 measured plots from today neatly
+- and upload the completed sheet here:
+
+https://drive.google.com/drive/folders/1Dvtc7VvUl2_QHfoVMeuQpEr2TTUSVLYo?usp=sharing
+
+You can also upload the locations there if you haven't already sent them to me by email or put them onto the sheets. It's best to do all this today or by tomorrow at the latest, so I can prepare the data for next week.
