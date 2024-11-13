@@ -28,6 +28,20 @@ So the filesystem will be as follows:
 
 # News
 
+## 14.11.24
+
+(05_uncertainties)
+
+- Please bring your laptops and have RStudio installed!
+
+### Lecture and Exercise (Max):
+
+- Review of the inventory
+- Comparison of inventory metrics per plot of different groups
+- Introduction to sampling uncertainty
+- Introduction to full inventory data Ettenheim
+- Introduction to R script for sampling
+
 ## 07.11.2024 (Field Day)
 
 folder: 04_accuracy_inventory
