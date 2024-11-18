@@ -7,6 +7,8 @@ Start 17.10.24
 
 Thursday 13-17 Uhr in Herderbau (R 400, 4th floor)
 
+**Exam date: 13.02.2025, 13-17 PM, R400**
+
 ## Preliminary Agenda:
 
 1. Introduction to the module
