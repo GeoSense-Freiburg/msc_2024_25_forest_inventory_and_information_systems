@@ -30,7 +30,7 @@ Thursday 13-17 Uhr in Herderbau (R 400, 4th floor)
 
 # News
 
-## 28.11.2024 (FELDTAG)
+## 28.11.2024 (Field day)
 
 (07_satelliteimagery)
 
