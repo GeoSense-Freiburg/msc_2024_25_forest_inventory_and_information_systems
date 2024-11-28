@@ -30,6 +30,16 @@ Thursday 13-17 Uhr in Herderbau (R 400, 4th floor)
 
 # News
 
+## 05.12.2024
+
+(08_droneslidar)
+
+- Inventory by drone
+- Introduction to LiDAR data processing
+- Introduction to AgiSoft Metashape (brief)
+- Presentation of geodata products
+- Introduction to the lidR package
+
 ## 28.11.2024 (Field day)
 
 (07_satelliteimagery)
