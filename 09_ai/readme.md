@@ -1,4 +1,5 @@
 **exercise: Apply / Evaluate Inventory AI on LIDAR Data - Part 1**
+    
     - UAV data: Tree positions, Tree heights (part 1)
     - Comparison with full inventory from ECOSENSE (part 2 next week)
         - DBH, Stand density
