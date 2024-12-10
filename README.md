@@ -30,6 +30,19 @@ Thursday 13-17 Uhr in Herderbau (R 400, 4th floor)
 
 # News
 
+## 12.12.24
+- **Lecture: Introduction to AI in Inventory**
+    - Individual tree detection
+    - Species recognition
+    - Tree height
+    - Trunks vs. branches vs. leaves, etc.
+
+- **Exercise: Applying AI to LIDAR Data / Evaluation - Part 1**
+    - UAV data: Tree positions, tree heights (part 1)
+    - Comparison with full inventory from ECOSENSE (part 2 next week)
+        - DBH, stand density
+        - Comparison of plot-based inventory vs. AI/drone-based inventory
+
 ## 05.12.2024
 
 (08_droneslidar)
