@@ -93,3 +93,7 @@ print(summary_stats_plot)
 ggsave("boxplot_area_vs.png", plot = summary_stats_plot, width = 8, height = 6, units = "in", dpi = 300)
 
 
+plot(data$basal_area_m2_ha, data$angle_count_m2_ha, ylim=c(0,40), xlim = c(0,40), xlab = "Basal area measured", ylab = "Angle Count method",
+     pch = as.character(data$plot_nr))
+cor.test(data$basal_area_m2_ha, data$angle_count_m2_ha)
+
