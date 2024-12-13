@@ -7,26 +7,93 @@ Start 17.10.24
 
 Thursday 13-17 Uhr in Herderbau (R 400, 4th floor)
 
-Bring a laptop. If not available, work in a team.
-Install QGIS (version 3.34 LTR!) and RStudio.
-Here on GitHub, you will find all the materials for the course. The topics are numbered, and a new folder with a number will be added weekly. For example, today the folder "01_intro" is relevant. In general, there will always be a README.md file in each of these folders, where you can directly see on GitHub what it's about. In the "lecture" folder, there are slides and lecture materials, and in the "exercises" folder, you will find exercises to download.
+**Exam date: 13.02.2025, 13-17 PM, R400**
 
-So the filesystem will be as follows:
+## Preliminary Agenda:
 
-```
-01_intro
--- lecture
--- -- example_slide.pdf
--- -- ...
--- exercise
--- -- exercise_1
--- -- ...
--- README.md
-```
+1. Introduction to the module
+2. Theory of forest inventories
+3. GNSS position determination                          (Field exercise)
+4. Mooswald inventory field exercise                    (Field exercise)
+5. Sampling uncertainties
+6. Allometries
+7. Introduction to drone remote sensing                 (Field exercise)
+8. LIDAR data
+9. Introduction to AI inventory
+10. AI inventory (Part 2)
+11. deadtrees.earth
+12. deadtrees.earth (Part 2)
+13. Introduction to large-scale forest information products
+14. Summary and exam review
 
 ---------------------------
 
 # News
+
+## 12.12.24
+- **Lecture: Introduction to AI in Inventory**
+    - Individual tree detection
+    - Species recognition
+    - Tree height
+    - Trunks vs. branches vs. leaves, etc.
+
+- **Exercise: Applying AI to LIDAR Data / Evaluation - Part 1**
+    - UAV data: Tree positions, tree heights (part 1)
+    - Comparison with full inventory from ECOSENSE (part 2 next week)
+        - DBH, stand density
+        - Comparison of plot-based inventory vs. AI/drone-based inventory
+
+## 05.12.2024
+
+(08_droneslidar)
+
+- Inventory by drone
+- Introduction to LiDAR data processing
+- Introduction to AgiSoft Metashape (brief)
+- Presentation of geodata products
+- Introduction to the lidR package
+
+## 28.11.2024 (Field day)
+
+(07_satelliteimagery)
+
+**Please wear sturdy footwear and warm clothing!**
+
+- 13:30-17:00 +-
+- Meeting point punctually(!!!) at Vogelsanghütte (near Ebnet):
+
+https://maps.app.goo.gl/tZVoGPWRAtX9x6Vx5
+
+**By bike, it takes about 20 minutes from Herderbau, by public transport + walking about 45 minutes**
+
+### Field Day! (Max, Teja)
+
+- Introduction to remote sensing data
+- Platforms: Drones, airplanes, satellites, advantages, disadvantages
+- Sensors: Advantages, disadvantages
+- Geodata products (vector, raster)
+- Demonstration of drones + TLS
+- Stations for thermal, LiDAR, multispectral
+
+------------------------------
+
+## 21.11.2024
+
+(06_allometries)
+
+### Lecture (Thomas S.): Allometries
+
+- Introduction and history
+- Estimation of wood stock, biomass, modeling, predictions, etc.
+- Influencing factors on allometries (stand density, management, site factors, etc.)
+- From DBH → biomass/wood stock (needed for exercises)
+
+### Exercise: Allometries and wood stock in R (Max, Teja)
+
+- Apply allometries to full inventory ECOSENSE based on the R scripts from the previous week
+- Evaluate and discuss the impact of sampling uncertainties on allometries
+
+--------------------------
 
 ## 14.11.24
 
