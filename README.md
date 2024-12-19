@@ -30,6 +30,12 @@ Thursday 13-17 Uhr in Herderbau (R 400, 4th floor)
 
 # News
 
+## 19.12.24
+
+- **Exercise: Applying AI to LIDAR Data / Evaluation - Part 2**
+    - Comparison of UAV and TLS-based inventory with full inventory from ECOSENSE (part 2 next week)
+        - Tree positions, tree heights and tree species
+
 ## 12.12.24
 - **Lecture: Introduction to AI in Inventory**
     - Individual tree detection
