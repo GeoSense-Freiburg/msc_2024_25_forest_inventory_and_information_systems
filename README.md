@@ -31,8 +31,8 @@ Thursday 13-17 Uhr in Herderbau (R 400, 4th floor)
 
 # News
 
-## 05.02.25
-last lecture: GIS in forstlichen Geschäftsprozessen (Thomas Purfürst)
+## 06.02.25
+last lecture: GIS in applied forest processes (Thomas Purfürst)
 
 ## 19.12.24
 
