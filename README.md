@@ -25,10 +25,14 @@ Thursday 13-17 Uhr in Herderbau (R 400, 4th floor)
 12. deadtrees.earth (Part 2)
 13. Introduction to large-scale forest information products
 14. Summary and exam review
+15. GIS in applied forest processes
 
 ---------------------------
 
 # News
+
+## 05.02.25
+last lecture: GIS in forstlichen Geschäftsprozessen (Thomas Purfürst)
 
 ## 19.12.24
 
